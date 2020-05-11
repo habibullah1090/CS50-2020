@@ -1,0 +1,60 @@
+body {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #26de81;
+}
+
+h1 {
+	text-transform: uppercase;
+	color: #fff;
+	text-align: center;
+	font-size: 60px;
+	font-family: arial;
+	letter-spacing: 5px;
+	animation: float 5s infinite;
+	animation-direction: alternate;
+}
+
+@keyframes float {
+	from {
+		transform: rotate(15deg);
+	}
+
+	to {
+		transform: rotate(-15deg)
+	}
+
+}
+
+h1 span {
+	display: inline-block;
+	color: red;
+	font-weight: 100;
+	padding: 0;
+	animation: rot 5s infinite;
+	transition: color 5s;
+	animation-fill-mode: both;
+}
+
+@keyframes rot {
+	0% {
+		transform: rotate(0deg);
+		color: red;
+	}
+
+	50% {
+		color: #fff;
+	}
+
+	75% {
+		color: #f33;
+	}
+
+	100% {
+		transform: rotate(360deg);
+		color: red;
+	}
+
+}
